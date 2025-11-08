@@ -1,0 +1,92 @@
+:root {
+  --background-color: #FFF8F2;
+  --text: #422C19;
+  --text-link: #BF9877;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+a {
+    color: var(--text-link);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+ol, ul {
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+.split-view {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: var(--text-link);
+    width: 100px;
+    transition: background-color 0.2s ease;
+}
+
+#sidebar:hover {
+    background-color: var(--text);
+}
+
+.split-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    padding: 3rem;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+}
