@@ -67,7 +67,7 @@ ol, ul {
 .paragraph {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.6rem;
 }
 
 @media (max-width: 600px) {
